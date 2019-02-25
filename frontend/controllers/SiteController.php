@@ -80,6 +80,7 @@ class SiteController extends Controller {
      * @return mixed
      */
     public function actionLogin() {
+        $this->layout = "mainLogin";
         if (!Yii::$app->user->isGuest) {
             return $this->goHome();
         }

@@ -10,7 +10,7 @@ use yii\web\AssetBundle;
 class AppAsset extends AssetBundle {
 
     public $basePath = '@webroot';
-    public $baseUrl = '../../themes/ai/';
+    public $baseUrl = '@web';
     public $css = [
         'css/preload.css',
         'css/vendors.css',
