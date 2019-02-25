@@ -11,9 +11,11 @@ return [
     'id' => 'app-frontend',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
+      'homeUrl' => '/sk2pv2',
     'controllerNamespace' => 'frontend\controllers',
     'components' => [
         'request' => [
+            'baseUrl' => '/sk2pv2', // localhost/yii2advance/
             'csrfParam' => '_csrf-frontend',
         ],
         'user' => [
