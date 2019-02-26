@@ -11,14 +11,17 @@ use yii\helpers\Url;
     <ul class="slidebar-menu">
         <li><a href="<?= Url::home() ?>">Home</a></li>
         <li><?php
-            if (Yii::$app->user->isGuest) {
-                echo "<a href=" . Url::to(['site/login']) . ">Login</a>";
-                echo "<a href=" . Url::to(['site/signup']) . ">Register</a>";
-            } else {
+            if (Yii::$app->user->isGuest) 
+            {
+                echo "<a href=".Url::to(['site/login']).">Login</a>";
+                echo "<a href=".Url::to(['site/signup']).">Register</a>";
+            } else 
+            {
                 echo '<a data-method="post" href="site/logout">Logout</a>';
             }
             ?>
         </li>
+        <li><a href="<?= Url::to(['site/signup']) ?>">Register</a></li>
         <li><a href="page_contact.html">Contact</a></li>
     </ul>
 

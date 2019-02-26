@@ -60,14 +60,11 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
+        $this->layout='main';
         return $this->render('index');
     }
     
-    public function actionAdmin()
-    {
-        $this->layout="mainHome";
-        return $this->render('admin');
-    }
+   
 
 
     /**

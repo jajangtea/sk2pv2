@@ -1,6 +1,5 @@
 <?= $this->render('header') ?>
 <?= $this->render('carousel') ?>
-
 <div class="container">
     <?= $content ?>
 </div>
