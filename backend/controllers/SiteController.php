@@ -102,4 +102,14 @@ class SiteController extends Controller
 
         return $this->goHome();
     }
+    
+    public function actions()
+    {
+        $this->layout = "mainHome";
+        return [
+            'error' => [
+                'class' => 'yii\web\ErrorAction',
+            ],
+        ];
+    }
 }
