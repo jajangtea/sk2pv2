@@ -5,6 +5,7 @@
     <?= $content ?>
 </div>
 <?= $this->render('footer') ?>
+<?= $this->render('slider') ?>
 <?php $this->endBody() ?>
 </body>
 </html>
