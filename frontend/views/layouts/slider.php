@@ -30,6 +30,9 @@ use yii\helpers\Url;
             if (Yii::$app->user->isGuest) {
                 echo Html::button('Login', ['value' => Url::to(['site/login']), 'class' => 'modalB', 'id' => 'modalButton']);
                 echo Html::button('Register', ['value' => Url::to(['site/signup']), 'class' => 'modalB', 'id' => 'modalButtonRegister']);
+                $icon = '<span class="glyphicon glyphicon-eye-open"></span>';
+                $url = Url::to(['site/login']);
+                echo Html::a('Login', $url, ['data-toggle' => "modal", 'data-target' => "#categoryModal"]);
             } else {
                 echo '<a data-method="post" href="site/logout">Logout</a>';
             }

@@ -1,87 +1,29 @@
 <?php
 
 use yii\bootstrap\Modal;
+use yii\web\View;
+use yii\widgets\Pjax;
 
-/* @var $this yii\web\View */
+/* @var $this View */
 
 $this->title = 'Modals';
 ?>
 <div class="site-index">
 
-    <div class="jumbotron">
-        <h1>Congratulations!</h1>
-
-        <p class="lead">You have successfully created your Yii-powered application.</p>
-
-        <p><a class="btn btn-lg btn-success" href="http://www.yiiframework.com">Get started with Yii</a></p>
-    </div>
-
-    <div class="body-content">
-        <?php
-        Modal::begin([
-            'header' => '<h4 class="modal-title" id="myModalLabel">Login</h4>',
-            'id' => 'modal',
-            'size' => 'modal-md',
-        ]);
-        ?>
-        <div class="center-block logig-form">
-            <div class="panel panel-primary">
-                <div class="panel-heading">Masukan Username(NIM) dan Password</div>
-                <div class="panel-body">
-                    <div class="form-group">
-                        <div id='modalContent'></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <?php
-    Modal::end();
-    ?>
-
     <?php
     Modal::begin([
-        'header' => '<h4 class="modal-title" id="myModalLabel">Register</h4>',
-        'id' => 'modalRegister',
-        'size' => 'modal-lg',
+        'id' => 'categoryModal',
+        'size' => 'modal-md',
+        'header' => '<h2>Hello world</h2>',
     ]);
-    ?>
-    <div id='modalContentRegister'></div>
-    <?php
+    Pjax::begin([
+        'id' => 'pjax-modal', 'timeout' => false,
+        'enablePushState' => false,
+        'enableReplaceState' => false,
+    ]);
+
+    Pjax::end();
     Modal::end();
     ?>
-    <div class="row">
-        <div class="col-lg-4">
-            <h2>Heading</h2>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur.</p>
-
-            <p><a class="btn btn-default" href="http://www.yiiframework.com/doc/">Yii Documentation &raquo;</a></p>
-        </div>
-        <div class="col-lg-4">
-            <h2>Heading</h2>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur.</p>
-
-            <p><a class="btn btn-default" href="http://www.yiiframework.com/forum/">Yii Forum &raquo;</a></p>
-        </div>
-        <div class="col-lg-4">
-            <h2>Heading</h2>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur.</p>
-
-            <p><a class="btn btn-default" href="http://www.yiiframework.com/extensions/">Yii Extensions &raquo;</a></p>
-        </div>
-    </div>
-
-</div>
 </div>
