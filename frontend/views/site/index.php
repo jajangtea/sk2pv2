@@ -39,6 +39,17 @@ $this->title = 'Modals';
     Modal::end();
     ?>
 
+    <?php
+    Modal::begin([
+        'header' => '<h4 class="modal-title" id="myModalLabel">Register</h4>',
+        'id' => 'modalRegister',
+        'size' => 'modal-lg',
+    ]);
+    ?>
+    <div id='modalContentRegister'></div>
+    <?php
+    Modal::end();
+    ?>
     <div class="row">
         <div class="col-lg-4">
             <h2>Heading</h2>

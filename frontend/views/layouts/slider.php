@@ -6,13 +6,13 @@ use yii\helpers\Url;
 <style type="text/css">
     .modalB{
         background: #222;
-        border: solid 1px #2f2f2f;
+        border-top: none;
         border-bottom: solid 1px #2f2f2f;
+        border-left: solid 1px #2f2f2f;
         text-decoration: none;
         padding: 12px 20px;          
         text-align: left;
         width: 300px;
-
     }
     .modalB:hover{
         background-color: #000000;
@@ -29,7 +29,7 @@ use yii\helpers\Url;
         <li><?php
             if (Yii::$app->user->isGuest) {
                 echo Html::button('Login', ['value' => Url::to(['site/login']), 'class' => 'modalB', 'id' => 'modalButton']);
-                echo "<a href=" . Url::to(['site/signup']) . ">Register</a>";
+                echo Html::button('Register', ['value' => Url::to(['site/signup']), 'class' => 'modalB', 'id' => 'modalButtonRegister']);
             } else {
                 echo '<a data-method="post" href="site/logout">Logout</a>';
             }

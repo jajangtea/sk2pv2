@@ -11,10 +11,9 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="container">
     <div class="row">
-        <div class="col-md-12">
-            <h2 class="section-title no-margin-top"><?= Html::encode($this->title)?></h2>
-            <div class="panel panel-success-dark animated fadeInDown">
-                <div class="panel-heading">Register Form</div>
+        <div class="col-md-9">
+            <div class="panel panel-primary animated fadeInDown">
+                <div class="panel-heading">Lengkapi data berikut :</div>
                 <div class="panel-body">
                     <?php $form = ActiveForm::begin(['id' => 'form-signup']); ?>
                     <form role="form">
