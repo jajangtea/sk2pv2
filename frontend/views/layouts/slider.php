@@ -1,7 +1,23 @@
 <?php
 
+use yii\helpers\Html;
 use yii\helpers\Url;
 ?>
+<style type="text/css">
+    .modalB{
+        background: #222;
+        border: solid 1px #2f2f2f;
+        border-bottom: solid 1px #2f2f2f;
+        text-decoration: none;
+        padding: 12px 20px;          
+        text-align: left;
+        width: 300px;
+
+    }
+    .modalB:hover{
+        background-color: #000000;
+    }
+</style>
 <div class="sb-slidebar sb-right sb-style-overlay">
     <div class="input-group">
         <a href="javascript:void(0);" class="sb-icon-navbar sb-toggle-right"><i class="fa fa-bars"></i></a>
@@ -12,7 +28,7 @@ use yii\helpers\Url;
         <li><a href="<?= Url::home() ?>">Home</a></li>
         <li><?php
             if (Yii::$app->user->isGuest) {
-                echo "<a href=" . Url::to(['site/login']) . ">Login</a>";
+                echo Html::button('Login', ['value' => Url::to(['site/login']), 'class' => 'modalB', 'id' => 'modalButton']);
                 echo "<a href=" . Url::to(['site/signup']) . ">Register</a>";
             } else {
                 echo '<a data-method="post" href="site/logout">Logout</a>';

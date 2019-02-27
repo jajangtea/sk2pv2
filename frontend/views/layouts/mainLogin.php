@@ -16,8 +16,6 @@ use yii\widgets\Breadcrumbs;
         ?>
     </div>
 </header>
-
-<div class="container">
     <?= $content ?>
 </div> <!-- container  -->
 

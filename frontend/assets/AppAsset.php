@@ -20,6 +20,7 @@ class AppAsset extends AssetBundle
     ];
     public $js = [
         'js/vendors.js',
+        'js/main.js',
         'js/styleswitcher.js',
         'js/syntaxhighlighter/shCore.js',
         'js/syntaxhighlighter/shBrushXml.js',

@@ -81,7 +81,7 @@ class SiteController extends Controller
     /**
      * Login action.
      *
-     * @return string
+     * @return string 
      */
     public function actionLogin()
     {
@@ -96,7 +96,7 @@ class SiteController extends Controller
         } else {
             $model->password = '';
 
-            return $this->render('login', [
+            return $this->renderAjax('login', [
                 'model' => $model,
             ]);
         }

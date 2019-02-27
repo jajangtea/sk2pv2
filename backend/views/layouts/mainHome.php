@@ -29,7 +29,7 @@ AppAsset::register($this);
             <div class="boxed">
 
 
-                <nav class="navbar navbar-default yamm navbar-static-top" role="navigation" id="header">
+                <nav class="navbar navbar-dark yamm navbar-static-top" role="navigation" id="header">
                     <div class="container">
                         <!-- Brand and toggle get grouped for better mobile display -->
                         <div class="navbar-header">
