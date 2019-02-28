@@ -19,7 +19,6 @@ class AppAsset extends AssetBundle
         'css/width-full.css'
     ];
     public $js = [
-        'js/vendors.js',
         'js/main.js',
         'js/styleswitcher.js',
         'js/syntaxhighlighter/shCore.js',
