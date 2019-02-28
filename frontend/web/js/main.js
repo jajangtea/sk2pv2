@@ -1,25 +1,31 @@
-//$(function () {
-//    $('#modalButton').click(function () {
-//        $('#modal').modal('show')
-//                .find('#modalContent')
-//                .load($(this).attr('value'));
-//    });
-//});
-//
-//$(function () {
-//    $('#modalButtonRegister').click(function () {
-//        $('#modalRegister').modal('show')
-//                .find('#modalContentRegister')
-//                .load($(this).attr('value'));
-//    });
-//});
-
-$("#categoryModal").on("shown.bs.modal", function (event) {
-    var button = $(event.relatedTarget)
-    var href = button.attr("href")
-    $.pjax.reload("#pjax-modal", {
-        "timeout": false,
-            "url": href,
-        "replace": false,
+$(function () {
+    $('#modalButton').click(function () {
+        $('#modalx').modal('show')
+                .find('#modalContent')
+                .load($(this).attr('value'));
+				 return false;   
     });
-})
+
+   
+});
+
+$(function () {
+    $('#modalButtonRegister').click(function () {
+        $('#modalRegister').modal('show')
+                .find('#modalContentRegister')
+                .load($(this).attr('value'));
+				 return false;   
+    });
+
+   
+});
+
+
+function openNav() {
+
+  document.getElementById("mySidenav").style.width = "300px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}

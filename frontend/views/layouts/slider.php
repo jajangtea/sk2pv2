@@ -5,7 +5,7 @@ use yii\helpers\Url;
 ?>
 <style type="text/css">
     .modalB{
-        background: #222;
+        background: #111;
         border-top: none;
         border-bottom: solid 1px #2f2f2f;
         border-left: solid 1px #2f2f2f;
@@ -13,14 +13,15 @@ use yii\helpers\Url;
         padding: 12px 20px;          
         text-align: left;
         width: 300px;
+        color: #ddd;
     }
     .modalB:hover{
         background-color: #000000;
     }
 </style>
-<div class="sb-slidebar sb-right sb-style-overlay">
+<div id="mySidenav" class="sidenav sb-style-overlay">
     <div class="input-group">
-        <a href="javascript:void(0);" class="sb-icon-navbar sb-toggle-right"><i class="fa fa-bars"></i></a>
+          <a href="javascript:void(0)" class="sb-icon-navbar sb-toggle-right" onclick="closeNav()">&times;</a>
     </div><!-- /input-group -->
 
     <h2 class="slidebar-header no-margin-bottom">Navigation</h2>
@@ -30,9 +31,6 @@ use yii\helpers\Url;
             if (Yii::$app->user->isGuest) {
                 echo Html::button('Login', ['value' => Url::to(['site/login']), 'class' => 'modalB', 'id' => 'modalButton']);
                 echo Html::button('Register', ['value' => Url::to(['site/signup']), 'class' => 'modalB', 'id' => 'modalButtonRegister']);
-                $icon = '<span class="glyphicon glyphicon-eye-open"></span>';
-                $url = Url::to(['site/login']);
-                echo Html::a('Login', $url, ['data-toggle' => "modal", 'data-target' => "#categoryModal"]);
             } else {
                 echo '<a data-method="post" href="site/logout">Logout</a>';
             }
@@ -41,14 +39,13 @@ use yii\helpers\Url;
         <li><a href="page_contact.html">Contact</a></li>
     </ul>
 
-    <h2 class="slidebar-header">Social Media</h2>
-    <div class="slidebar-social-icons">
-        <a href="#" class="social-icon-ar rss"><i class="fa fa-instagram"></i></a>
-        <a href="#" class="social-icon-ar facebook"><i class="fa fa-facebook"></i></a>
-        <a href="#" class="social-icon-ar twitter"><i class="fa fa-twitter"></i></a>
-        <a href="#" class="social-icon-ar wordpress"><i class="fa fa-wordpress"></i></a>
-        <a href="#" class="social-icon-ar linkedin"><i class="fa fa-youtube"></i></a>
-    </div>
+     <h2 class="slidebar-header no-margin-bottom">Social Media</h2>
+     <ul class="slidebar-menu">
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Youtube</a></li>
+        <li><a href="#">Twitter</a></li>
+    </ul>
 </div> <!-- sb-slidebar sb-right -->
 <div id="back-top">
     <a href="#header"><i class="fa fa-chevron-up"></i></a>
