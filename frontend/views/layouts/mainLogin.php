@@ -15,8 +15,12 @@ use yii\widgets\Breadcrumbs;
         ])
         ?>
     </div>
+    
 </header>
-    <?= $content ?>
+
+    <?= 
+           
+        $content ?>
 </div> <!-- container  -->
 
 <?= $this->render('footer') ?>
