@@ -29,6 +29,15 @@ class AppAsset extends AssetBundle {
         'vendor/hamburgers/hamburgers.min.css',
         'css/unify-admin.css',
         'css/custom.css',
+        'vendor/dzsparallaxer/dzsparallaxer.css',
+        'vendor/dzsparallaxer/dzsscroller/scroller.css',
+        'vendor/dzsparallaxer/advancedscroller/plugin.css',
+        'vendor/plyr/dist/plyr.css',
+        'vendor/hs-bg-video/hs-bg-video.css',
+        'vendor/hs-megamenu/src/hs.megamenu.css',
+        'css/unify-core.css',
+        'css/unify-components.css',
+        'css/unify-globals.css',
     ];
     public $js = [
         'vendor/jquery/jquery.min.js',
@@ -65,10 +74,28 @@ class AppAsset extends AssetBundle {
         'js/helpers/hs.focus-state.js',
         'js/components/hs.popup.js',
         'js/custom.js',
+        'vendor/jquery/jquery.min.js"',
+        'vendor/jquery-migrate/jquery-migrate.min.js"',
+        'vendor/popper.js/popper.min.js"',
+        'vendor/bootstrap/bootstrap.min.js"',
+        'vendor/hs-megamenu/src/hs.megamenu.js"',
+        'vendor/dzsparallaxer/dzsparallaxer.js"',
+        'vendor/dzsparallaxer/dzsscroller/scroller.js"',
+        'vendor/dzsparallaxer/advancedscroller/plugin.js"',
+        'vendor/hs-bg-video/hs-bg-video.js"',
+        'vendor/hs-bg-video/vendor/player.min.js"',
+        'js/hs.core.js"',
+        'js/components/hs.header.js"',
+        'js/helpers/hs.hamburgers.js"',
+        'js/components/hs.tabs.js"',
+        'js/helpers/hs.bg-video.js"',
+        'js/components/hs.go-to.js"',
+        'js/helpers/hs.focus-state.js"',
+        'js/custom.js"',
     ];
     public $depends = [
         'yii\web\YiiAsset',
-        //'yii\bootstrap\BootstrapAsset',
+            //'yii\bootstrap\BootstrapAsset',
     ];
 
 }

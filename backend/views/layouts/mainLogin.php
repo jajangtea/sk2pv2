@@ -6,7 +6,6 @@
 
 </div> <!-- boxed -->
 
-<?= $this->render('slider') ?>
 </body>
 <?php $this->endBody() ?>
 </body>

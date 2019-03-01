@@ -8,11 +8,11 @@ $params = array_merge(
 );
 
 return [
-    'id' => 'app-backend',
+    'id' => 'appstti',
     'basePath' => dirname(__DIR__),
     'controllerNamespace' => 'backend\controllers',
     'bootstrap' => ['log'],
-    'as access' => [
+    'as acces' => [
         'class' => 'hscstudio\mimin\components\AccessControl',
         'allowActions' => [
             // add wildcard allowed action here!
