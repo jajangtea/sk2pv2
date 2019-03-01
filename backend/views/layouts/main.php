@@ -1658,12 +1658,20 @@ AppAsset::register($this);
 
                                                 <h6 class="g-font-size-16 g-font-weight-300 g-color-gray-dark-v6 mb-0">New Clients</h6>
                                             </div>
+
+
                                         </div>
+
                                     </div>
+
                                 </div>
+
                                 <!-- End Panel -->
                             </div>
-
+                            <!-- Statistic Card -->
+                            <div class="col-xl-12">
+                                <?= $content ?>
+                            </div>
 
                         </div>
                     </div>

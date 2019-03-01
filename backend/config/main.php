@@ -12,9 +12,25 @@ return [
     'basePath' => dirname(__DIR__),
     'controllerNamespace' => 'backend\controllers',
     'bootstrap' => ['log'],
-    'modules' => [],
+    'as access' => [
+        'class' => 'hscstudio\mimin\components\AccessControl',
+        'allowActions' => [
+            // add wildcard allowed action here!
+            'site/*',
+            'debug/*',
+            'mimin/*', // only in dev mode
+        ],
+    ],
+    'modules' => [
+        'mimin' => [
+            'class' => 'hscstudio\mimin\Module',
+        ],
+    ],
     'homeUrl' => '/sk2pv2/admin',
     'components' => [
+        'authManager' => [
+            'class' => 'yii\rbac\DbManager', // only support DbManager
+        ],
         'request' => [
             'baseUrl' => '/sk2pv2/admin', // localhost/yii2advance/admin
             'csrfParam' => '_csrf-backend',
