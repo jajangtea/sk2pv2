@@ -19,20 +19,7 @@ AppAsset::register($this);
         <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
         <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans%3A400%2C300%2C500%2C600%2C700%7CPlayfair+Display%7CRoboto%7CRaleway%7CSpectral%7CRubik">
         <!-- CSS Global Compulsory -->
-        <style type="text/css">
-            .nav li > form > button.logo {
-                padding: 15px;
-            }
-
-            .nav > li > form > button.logo:focus,
-            .nav > li > form > button.logo:hover {
-                text-decoration: none;
-            }
-
-            .nav > li > form > button.logo:focus {
-                outline: none;
-            }
-        </style>
+      
         <?php $this->registerCsrfMetaTags() ?>
         <title><?= Html::encode($this->title) ?></title>
         <?php $this->head() ?>

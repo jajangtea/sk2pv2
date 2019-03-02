@@ -1,89 +1,131 @@
-<?php
 
-use yii\helpers\Html;
-use yii\helpers\Url;
-?>
-<aside id="footer-widgets">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <h3 class="footer-widget-title">Sitemap</h3>
-                <ul class="list-unstyled three_cols">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="portfolio_sidebar.html">Portafolio</a></li>
-                    <li><a href="portfolio_topvar.html">Works</a></li>
-                    <li><a href="page_timeline_left.html">Timeline</a></li>
-                    <li><a href="page_pricing.html">Pricing</a></li>
-                    <li><a href="page_about2.html">About Us</a></li>
-                    <li><a href="page_team.html">Our Team</a></li>
-                    <li><a href="page_services.html">Services</a></li>
-                    <li><a href="page_support.html">FAQ</a></li>
-                    <li><a href="page_login_full.html">Login</a></li>
-                    <li><a href="page_contact.html">Contact</a></li>
-                </ul>
-                <h3 class="footer-widget-title">Subscribe</h3>
-                <p>Lorem ipsum Amet fugiat elit nisi anim mollit minim labore ut esse Duis ullamco ad dolor veniam velit.</p>
-                <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Email Adress">
-                    <span class="input-group-btn">
-                        <button class="btn btn-ar btn-primary" type="button">Subscribe</button>
-                    </span>
-                </div><!-- /input-group -->
-            </div>
-            <div class="col-md-4">
-                <div class="footer-widget">
-                    <h3 class="footer-widget-title">Recent Post</h3>
-                    <div class="media">
-                        <a class="pull-left" href="#">
-                            <?= Html::img(Yii::getAlias('@web').'/img/demo/m2.jpg', ['style' => 'width:75px;height:75']) ?>
-                        </a>
-                        <div class="media-body">
-                            <h4 class="media-heading"><a href="#">Lorem ipsum Duis quis occaecat minim lorem ipsum tempor officia labor</a></h4>
-                            <small>August 18, 2013</small>
+                     
+                    <!-- Footer -->
+                    <footer id="footer" class="u-footer--bottom-sticky g-bg-white g-color-gray-dark-v6 g-brd-top g-brd-gray-light-v7 g-pa-20">
+                        <div class="row align-items-center">
+                            <!-- Footer Nav -->
+                            <div class="col-md-4 g-mb-10 g-mb-0--md">
+                                <ul class="list-inline text-center text-md-left mb-0">
+                                    <li class="list-inline-item">
+                                        <a class="g-color-gray-dark-v6 g-color-secondary--hover" href="#!">FAQ</a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <span class="g-color-gray-dark-v6">|</span>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="g-color-gray-dark-v6 g-color-secondary--hover" href="#!">Support</a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <span class="g-color-gray-dark-v6">|</span>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="g-color-gray-dark-v6 g-color-secondary--hover" href="#!">Contact Us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- End Footer Nav -->
+
+                            <!-- Footer Socials -->
+                            <div class="col-md-4 g-mb-10 g-mb-0--md">
+                                <ul class="list-inline g-font-size-16 text-center mb-0">
+                                    <li class="list-inline-item g-mx-10">
+                                        <a href="#!" class="g-color-facebook g-color-secondary--hover">
+                                            <i class="fa fa-facebook-square"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item g-mx-10">
+                                        <a href="#!" class="g-color-google-plus g-color-secondary--hover">
+                                            <i class="fa fa-google-plus"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item g-mx-10">
+                                        <a href="#!" class="g-color-black g-color-secondary--hover">
+                                            <i class="fa fa-github"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item g-mx-10">
+                                        <a href="#!" class="g-color-twitter g-color-secondary--hover">
+                                            <i class="fa fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- End Footer Socials -->
+
+                            <!-- Footer Copyrights -->
+                            <div class="col-md-4 text-center text-md-right">
+                                <small class="d-block g-font-size-default">&copy; 2018 Htmlstream. All Rights Reserved.</small>
+                            </div>
+                            <!-- End Footer Copyrights -->
                         </div>
-                    </div>
-                    <div class="media">
-                        <a class="pull-left" href="#">  <?= Html::img(Yii::getAlias('@web').'/img/demo/m11.jpg', ['style' => 'width:75px;height:75']) ?></a>
-                        <div class="media-body">
-                            <h4 class="media-heading"><a href="#">Lorem ipsum dolor excepteur sunt in lorem ipsum cillum tempor</a></h4>
-                            <small>September 14, 2013</small>
-                        </div>
-                    </div>
-                    <div class="media">
-                        <a class="pull-left" href="#">  <?= Html::img(Yii::getAlias('@web').'/img/demo/m4.jpg', ['style' => 'width:75px;height:75']) ?></a>
-                        <div class="media-body">
-                            <h4 class="media-heading"><a href="#">Lorem ipsum Dolor cupidatat minim adipisicing et fugiat</a></h4>
-                            <small>October 9, 2013</small>
-                        </div>
-                    </div>
+                    </footer>
+                    <!-- End Footer -->
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="footer-widget">
-                    <h3 class="footer-widget-title">Recent Works</h3>
-                    <div class="row">
-                        <div class="col-lg-6 col-md-6 col-sm-3 col-xs-6">
+        </main>
+        <script>
+            $(document).on('ready', function () {
+                // initialization of custom select
+                $('.js-select').selectpicker();
 
-                            <a href="#" class="thumbnail"> <?= Html::img(Yii::getAlias('@web').'/img/demo/wf1.jpg', ['class' => 'img-responsive']) ?></a>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-3 col-xs-6">
-                            <a href="#" class="thumbnail"> <?= Html::img(Yii::getAlias('@web').'/img/demo/wf2.jpg', ['class' => 'img-responsive']) ?></a>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-3 col-xs-6">
-                            <a href="#" class="thumbnail"> <?= Html::img(Yii::getAlias('@web').'/img/demo/wf3.jpg', ['class' => 'img-responsive']) ?></a>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-3 col-xs-6">
-                            <a href="#" class="thumbnail"> <?= Html::img(Yii::getAlias('@web').'/img/demo/wf4.jpg', ['class' => 'img-responsive']) ?></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> <!-- row -->
-    </div> <!-- container -->
-</aside> <!-- footer-widgets -->
-<footer id="footer">
-    <p>&copy; 2014 <a href="#">Artificial Reason</a>, inc. All rights reserved.</p>
-</footer>
-</div> <!-- boxed -->
+                // initialization of hamburger
+                $.HSCore.helpers.HSHamburgers.init('.hamburger');
 
+                // initialization of charts
+                $.HSCore.components.HSAreaChart.init('.js-area-chart');
+                $.HSCore.components.HSDonutChart.init('.js-donut-chart');
+                $.HSCore.components.HSBarChart.init('.js-bar-chart');
+
+                // initialization of sidebar navigation component
+                $.HSCore.components.HSSideNav.init('.js-side-nav', {
+                    afterOpen: function () {
+                        setTimeout(function () {
+                            $.HSCore.components.HSAreaChart.init('.js-area-chart');
+                            $.HSCore.components.HSDonutChart.init('.js-donut-chart');
+                            $.HSCore.components.HSBarChart.init('.js-bar-chart');
+                        }, 400);
+                    },
+                    afterClose: function () {
+                        setTimeout(function () {
+                            $.HSCore.components.HSAreaChart.init('.js-area-chart');
+                            $.HSCore.components.HSDonutChart.init('.js-donut-chart');
+                            $.HSCore.components.HSBarChart.init('.js-bar-chart');
+                        }, 400);
+                    }
+                });
+
+                // initialization of range datepicker
+                $.HSCore.components.HSRangeDatepicker.init('#rangeDatepicker, #rangeDatepicker2, #rangeDatepicker3');
+
+                // initialization of datepicker
+                $.HSCore.components.HSDatepicker.init('#datepicker', {
+                    dayNamesMin: [
+                        'SU',
+                        'MO',
+                        'TU',
+                        'WE',
+                        'TH',
+                        'FR',
+                        'SA'
+                    ]
+                });
+
+                // initialization of HSDropdown component
+                $.HSCore.components.HSDropdown.init($('[data-dropdown-target]'), {dropdownHideOnScroll: false});
+
+                // initialization of custom scrollbar
+                $.HSCore.components.HSScrollBar.init($('.js-custom-scroll'));
+
+                // initialization of popups
+                $.HSCore.components.HSPopup.init('.js-fancybox', {
+                    btnTpl: {
+                        smallBtn: '<button data-fancybox-close class="btn g-pos-abs g-top-25 g-right-30 g-line-height-1 g-bg-transparent g-font-size-16 g-color-gray-light-v3 g-brd-none p-0" title=""><i class="hs-admin-close"></i></button>'
+                    }
+                });
+            });
+        </script>
+        <?php $this->endBody() ?>
+    </body>
+</html>
+
+<?php $this->endPage() ?>
