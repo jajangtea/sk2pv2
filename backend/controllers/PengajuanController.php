@@ -6,6 +6,7 @@ use Yii;
 use common\models\Pengajuan;
 use common\models\PengajuanSearch;
 use yii\web\Controller;
+use yii\filters\AccessControl;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
@@ -20,6 +21,20 @@ class PengajuanController extends Controller
     public function behaviors()
     {
         return [
+            'access' => [
+                'class' => AccessControl::className(),
+                'rules' => [
+                    [
+                        'actions' => ['index', 'error'],
+                        'allow' => true,
+                    ],
+                    [
+                        'actions' => ['logout','admin'],
+                        'allow' => true,
+                        'roles' => ['@'],
+                    ],
+                ],
+            ],
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
