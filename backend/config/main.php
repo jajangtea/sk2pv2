@@ -18,7 +18,7 @@ return [
             // add wildcard allowed action here!
             'site/*',
             'debug/*',
-            //'mimin/*', // only in dev mode
+            'mimin/*', // only in dev mode
         ],
     ],
     'modules' => [
